@@ -1,9 +1,12 @@
 package main
 
-import "flag"
-import "github.com/mmcdole/gofeed"
-import "log"
-import "github.com/Tubbebubbe/transmission"
+import (
+	"flag"
+	"log"
+
+	"github.com/Tubbebubbe/transmission"
+	"github.com/mmcdole/gofeed"
+)
 
 func main() {
 	fURL := flag.String("feed", "", "Feed URL")
